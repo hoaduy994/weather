@@ -21,6 +21,7 @@ Ta sẽ tạo một folder templates
   Bên trong folder weather, hãy tạo một file mới có tên là index.html. 
 
 Sử dụng API thời tiết OpenWeather
+https://github.com/hoaduy994/weather/issues/1#issue-1517716609
   Truy cập trang web, tạo account và sau đó đi tới các khóa API trên trang tổng quan của họ. 
   Nhập tên và tạo khóa API mới. Khóa này sẽ cho phép ta sử dụng API để xem thời tiết.
  
