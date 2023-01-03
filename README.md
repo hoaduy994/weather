@@ -1,6 +1,6 @@
-# weather
-
-Cài đặt
+# weather <br>
+![alt](https://cdn.coursehunter.net/course/python-django-s-nulya-do-kommercheskih-prilozheniy.jpg) <br>
+Cài đặt Django
   - pipenv install django 
 
 chạy lệnh startproject mà Django cung cấp để tạo dự án.
@@ -18,12 +18,12 @@ Ta sẽ tạo một folder templates
   - mkdir templates && cd templates 
   - mkdir weather 
 
-  Bên trong folder weather, hãy tạo một file mới có tên là index.html. 
+  - bên trong folder weather, hãy tạo một file mới có tên là index.html. 
 
-Sử dụng API thời tiết OpenWeather
-https://github.com/hoaduy994/weather/issues/1#issue-1517716609
-  Truy cập trang web, tạo account và sau đó đi tới các khóa API trên trang tổng quan của họ. 
-  Nhập tên và tạo khóa API mới. Khóa này sẽ cho phép ta sử dụng API để xem thời tiết.
+Sử dụng API thời tiết OpenWeather <br>
+![alt](https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png) <br>
+Truy cập trang web, tạo account và sau đó đi tới các khóa API trên trang tổng quan của họ. 
+Nhập tên và tạo khóa API mới. Khóa này sẽ cho phép ta sử dụng API để xem thời tiết.
  
 Cài đặt các yêu cầu để có thể gọi API từ bên trong ứng dụng.
   - pipenv install request
