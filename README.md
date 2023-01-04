@@ -1,4 +1,5 @@
-# <h1>So sánh Virtual Machine – VM và Docker Container</h1> <br>
+# <h1>So sánh Virtual Machine – VM và Docker Container</h1> 
+Virtual Machine – VM<br>
 ![alt](https://tel4vn.edu.vn/uploads/2020/09/so-sanh-may-ao-va-docker-container-tel4vn.edu_.vn-01.jpg) 
 <br>
   - VM là ảo hóa về phần cứng
@@ -7,7 +8,9 @@
   - Tiêu tốn tài nguyên của máy
   - Cần một hệ điều hành đi kèm để máy ảo có thể hoạt động GuestOS
   - phân bổ bộ nhớ theo nhu cầu cần thiết, thời gian khởi động lâu
-  - Hoàn toàn bị cô lập và an toàn hơn <br>
+  - Hoàn toàn bị cô lập và an toàn hơn 
+
+Docker Container<br>
 ![alt](https://tel4vn.edu.vn/uploads/2020/09/so-sanh-may-ao-va-docker-container-tel4vn.edu_.vn-02.jpg) 
 <br>
   - Docker container là ảo hóa về phần mềm
