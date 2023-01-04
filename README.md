@@ -1,38 +1,16 @@
-# weather <br>
-![alt](https://cdn.coursehunter.net/course/python-django-s-nulya-do-kommercheskih-prilozheniy.jpg) <br>
-Cài đặt Django
-  - pipenv install django 
-
-chạy lệnh startproject mà Django cung cấp để tạo dự án.
-  - django-admin startproject the_weather 
-
-tạo database SQLite cho bạn, database mặc định trong cài đặt và nó đã thêm một số bảng vào database đó.
-  - python manage.py migrate 
-
-Để tạo ứng dụng, chạy lệnh:
-  - python manage.py startapp weather
-
-Ta sẽ tạo một folder templates
-
-  - cd weather 
-  - mkdir templates && cd templates 
-  - mkdir weather 
-
-  - bên trong folder weather, hãy tạo một file mới có tên là index.html. 
-
-Sử dụng API thời tiết OpenWeather <br>
-![alt](https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png) <br>
-Truy cập trang web, tạo account và sau đó đi tới các khóa API trên trang tổng quan của họ. 
-Nhập tên và tạo khóa API mới. Khóa này sẽ cho phép ta sử dụng API để xem thời tiết.
- 
-Cài đặt các yêu cầu để có thể gọi API từ bên trong ứng dụng.
-  - pipenv install request
-  
-Tạo một bảng trong database, cột này sẽ có một cột được gọi là tên, là tên của city. 
-Thành phố này sẽ là một charfield, chỉ là một chuỗi.
-Để có được những thay đổi này trong database, ta phải chạy makemigrations để tạo mã cập nhật database và di chuyển để áp dụng những thay đổi đó. 
-  - python manage.py makemigrations 
-  - python manage.py migrate 
-  
-khởi động server và truy cập lại.
-  - python manage.py runserver 
+# <h1>So sánh Virtual Machine – VM và Docker Container</h1> <br>
+![alt](https://tel4vn.edu.vn/uploads/2020/09/so-sanh-may-ao-va-docker-container-tel4vn.edu_.vn-01.jpg) <br>
+  - VM là ảo hóa về phần cứng
+  - là một mô phỏng của hệ thống máy tính. Có thể tạo ra nhiều “máy tính logic” trên một “máy tính vật lý”.
+  - hoạt động trên HyperV, cần 1 phần mềm để chạy đóng gói máy ảo
+  - Tiêu tốn tài nguyên của máy
+  - Cần một hệ điều hành đi kèm để máy ảo có thể hoạt động GuestOS
+  - phân bổ bộ nhớ theo nhu cầu cần thiết, thời gian khởi động lâu
+  - Hoàn toàn bị cô lập và an toàn hơn
+<br>
+![alt](https://tel4vn.edu.vn/uploads/2020/09/so-sanh-may-ao-va-docker-container-tel4vn.edu_.vn-01.jpg)
+![alt](https://tel4vn.edu.vn/uploads/2020/09/so-sanh-may-ao-va-docker-container-tel4vn.edu_.vn-02.jpg) <br>
+  - Docker container là ảo hóa về phần mềm
+  - không sử dụng GuestOS -> hiệu suất hoạt động nhanh hơn
+  - yêu cầu ít dung lượng bộ nhớ hơn
+  - Cô lập ở mức tiến trình, có thể kém an toàn hơn
