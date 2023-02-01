@@ -52,3 +52,35 @@ Chu kỳ này được lặp lại nhiều lần trong ngày, đảm bảo rằn
   
   
 <h2>Cách cài đặt Jenkins trên CentOS 7</h2>
+
+  1. Cài đặt Java
+    - sudo yum install -y java-1.8.0-openjdk-devel
+
+  2. Add the Jenkins repository to the system:
+    - sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+  3. Import the Jenkins repository signing key:
+    - sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+  4. Install Jenkins:
+    - sudo yum install jenkins
+
+  5. Start the Jenkins service:
+    - sudo systemctl start jenkins
+
+  6.  Enable the Jenkins service to start at boot:
+    - sudo systemctl enable jenkins
+
+  7.  Open the firewall to allow access to the Jenkins web interface:
+    - sudo firewall-cmd --permanent --add-port=8080/tcp
+    - sudo firewall-cmd --reload
+
+  8.  Truy cập giao diện web Jenkins bằng cách điều hướng đến http://<server-ip>:8080 trong trình duyệt web.
+
+  9.  Làm theo hướng dẫn trên trang thiết lập Jenkins để hoàn tất quá trình cài đặt.
+  
+ # <h3>Cấu hình Jenkins trên Web</h3>
+  
+  Truy cập
+
+http://your_ip_or_domain:8080
